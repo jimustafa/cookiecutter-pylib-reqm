@@ -1,0 +1,4 @@
+-c setup.txt
+{% for req in cookiecutter.preset_requirements -%}
+{{req}}
+{% endfor -%}

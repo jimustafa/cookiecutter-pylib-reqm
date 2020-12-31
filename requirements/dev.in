@@ -1,0 +1,6 @@
+docutils
+pip-tools
+pre-commit
+pytest
+pytest-cookies
+tox
