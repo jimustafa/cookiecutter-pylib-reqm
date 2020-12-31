@@ -1,6 +1,10 @@
 docutils
+importlib-metadata
 pip-tools
 pre-commit
 pytest
 pytest-cookies
+pytest-datadir
+pytest-venv
+sh
 tox

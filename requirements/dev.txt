@@ -18,7 +18,7 @@ docutils==0.16            # via -r dev.in
 filelock==3.0.12          # via tox, virtualenv
 identify==1.5.2           # via pre-commit
 idna==2.10                # via requests
-importlib-metadata==1.7.0  # via pluggy, pre-commit, pytest, tox, virtualenv
+importlib-metadata==1.7.0  # via -r dev.in, pluggy, pre-commit, pytest, tox, virtualenv
 importlib-resources==3.0.0  # via pre-commit, virtualenv
 jinja2-time==0.2.0        # via cookiecutter
 jinja2==2.11.2            # via cookiecutter, jinja2-time
@@ -33,19 +33,23 @@ pre-commit==2.7.1         # via -r dev.in
 py==1.9.0                 # via pytest, tox
 pyparsing==2.4.7          # via packaging
 pytest-cookies==0.5.1     # via -r dev.in
-pytest==5.4.3             # via -r dev.in, pytest-cookies
+pytest-datadir==1.3.1     # via -r dev.in
+pytest-venv==0.2.1        # via -r dev.in
+pytest==5.4.3             # via -r dev.in, pytest-cookies, pytest-datadir, pytest-venv
 python-dateutil==2.8.1    # via arrow
 python-slugify==4.0.1     # via cookiecutter
 pyyaml==5.3.1             # via pre-commit
 requests==2.24.0          # via cookiecutter
+sh==1.14.1                # via -r dev.in
 six==1.15.0               # via cookiecutter, packaging, pip-tools, python-dateutil, tox, virtualenv
 text-unidecode==1.3       # via python-slugify
 toml==0.10.1              # via pre-commit, tox
 tox==3.20.0               # via -r dev.in
 urllib3==1.25.10          # via requests
-virtualenv==20.0.31       # via pre-commit, tox
+virtualenv==20.0.31       # via pre-commit, pytest-venv, tox
 wcwidth==0.2.5            # via pytest
 zipp==3.1.0               # via importlib-metadata, importlib-resources
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
+# setuptools
