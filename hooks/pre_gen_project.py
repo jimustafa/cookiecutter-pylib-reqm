@@ -1,5 +1,5 @@
 """
-{% set preset_requirements = [] %}
+{% set preset_requirements = ['pip-tools'] %}
 
 {% if cookiecutter.preset == 'basic' -%}
 {{ preset_requirements.append('pytest') }}

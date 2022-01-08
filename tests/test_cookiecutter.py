@@ -59,7 +59,7 @@ def test_integration(pytestconfig, datadir, venv, extra_context):
         )
         with chdir('requirements'):
             sh.make(
-                ['install-dev'],
+                ['all', 'install'],
                 _env={
                     'LC_ALL': 'C.UTF-8',
                     'LANG': 'C.UTF-8',

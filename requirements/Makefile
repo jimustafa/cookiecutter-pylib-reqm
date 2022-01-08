@@ -1,10 +1,9 @@
-.PHONY: install-dev
-install-dev: dev.txt
+.PHONY: all
+all: dev-requirements.txt
+
+.PHONY: install
+install: dev-requirements.txt
 	pip-sync $^
 
-dev.txt: dev.in
+%.txt: %.in
 	pip-compile $<
-
-.PHONY: clean
-clean:
-	- rm *.txt
