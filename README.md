@@ -3,10 +3,13 @@
 A `cookiecutter` template for Python library requirements management.
 
 ## Usage
+
 To use this template, execute the following:
+
 ```shell
 cookiecutter gh:jimustafa/cookiecutter-pylib-reqm
 ```
+
 Accepting the default options will create a `requirements` directory in the current project directory.
 The `requirements` directory will contain `dev.in`, a basic input file for `pip-tools`,
 specifying that the dependencies of the library given in `setup.py` are required development dependencies.
